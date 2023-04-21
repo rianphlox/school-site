@@ -1,7 +1,4 @@
-
-
 <?php include './inc/head.php' ?>
-
 
 <body>
 
@@ -181,19 +178,19 @@
                                 <li><a href="edit-student">Student Edit</a></li>
                             </ul>
                         </li>
-                        <li class="submenu active">
+                        <li class="submenu">
                             <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="teachers">Teacher List</a></li>
                                 <li><a href="teacher-details">Teacher View</a></li>
                                 <li><a href="add-teacher">Teacher Add</a></li>
-                                <li><a href="edit-teacher" class="active">Teacher Edit</a></li>
+                                <li><a href="edit-teacher">Teacher Edit</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <li class="submenu active">
                             <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="departments">Department List</a></li>
+                                <li><a href="departments" class="active">Department List</a></li>
                                 <li><a href="add-department">Department Add</a></li>
                                 <li><a href="edit-department">Department Edit</a></li>
                             </ul>
@@ -420,148 +417,241 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Edit Teachers</h3>
+                            <h3 class="page-title">Departments</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="teachers">Teachers</a></li>
-                                <li class="breadcrumb-item active">Edit Teachers</li>
+                                <li class="breadcrumb-item"><a href="index">Dashboard</a></li>
+                                <li class="breadcrumb-item active">Departments</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
+                <div class="student-group-form">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by ID ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by Name ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search by Year ...">
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="search-student-btn">
+                                <button type="btn" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="card">
+                        <div class="card card-table">
                             <div class="card-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Basic Details</span></h5>
+
+                                <div class="page-header">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h3 class="page-title">Departments</h3>
                                         </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Teacher ID <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="PRE1234">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Name <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Gender <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                    <option>Others</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms calendar-icon">
-                                                <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                <input class="form-control datetimepicker" type="text" placeholder="29-04-2022">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Mobile <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="077 3499 9959">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms calendar-icon">
-                                                <label>Joining Date <span class="login-danger">*</span></label>
-                                                <input class="form-control datetimepicker" type="text" placeholder="29-04-2022">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Qualification <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" value="Bachelor of Engineering">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Experience <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" value="5">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Login Details</span></h5>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Username <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Email ID <span class="login-danger">*</span></label>
-                                                <input type="email" class="form-control" value="vincent20@gmail.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Password <span class="login-danger">*</span></label>
-                                                <input type="password" class="form-control" value="vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Repeat Password <span class="login-danger">*</span></label>
-                                                <input type="password" class="form-control" value="vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Address</span></h5>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="form-group local-forms">
-                                                <label>Address <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="3979 Ashwood Drive">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>City <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Omaha">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>State <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Omaha">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Zip Code <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="3979">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Country <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="USA">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="student-submit">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                            </div>
+                                        <div class="col-auto text-end float-end ms-auto download-grp">
+                                            <a href="#" class="btn btn-outline-primary me-2"><i class="fas fa-download"></i> Download</a>
+                                            <a href="add-department" class="btn btn-primary"><i class="fas fa-plus"></i></a>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+
+                                <table class="table border-0 star-student table-hover table-center mb-0 datatable table-striped">
+                                    <thead class="student-thread">
+                                        <tr>
+                                            <th>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </th>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>HOD</th>
+                                            <th>Started Year</th>
+                                            <th>No of Students</th>
+                                            <th class="text-end">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </td>
+                                            <td>PRE2209</td>
+                                            <td>
+                                                <h2>
+                                                    <a>Computer Science Engg</a>
+                                                </h2>
+                                            </td>
+                                            <td>Aaliyah</td>
+                                            <td>1995</td>
+                                            <td>180</td>
+                                            <td class="text-end">
+                                                <div class="actions">
+                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="edit-department" class="btn btn-sm bg-danger-light">
+                                                        <i class="feather-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </td>
+                                            <td>PRE2213</td>
+                                            <td>
+                                                <h2>
+                                                    <a>Mechanical Engg</a>
+                                                </h2>
+                                            </td>
+                                            <td>Malynne</td>
+                                            <td>1999</td>
+                                            <td>240</td>
+                                            <td class="text-end">
+                                                <div class="actions">
+                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="edit-department" class="btn btn-sm bg-danger-light">
+                                                        <i class="feather-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </td>
+                                            <td>PRE2143</td>
+                                            <td>
+                                                <h2>
+                                                    <a>Electrical Engg</a>
+                                                </h2>
+                                            </td>
+                                            <td>Levell Scott</td>
+                                            <td>1994</td>
+                                            <td>163</td>
+                                            <td class="text-end">
+                                                <div class="actions">
+                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="edit-department" class="btn btn-sm bg-danger-light">
+                                                        <i class="feather-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </td>
+                                            <td>PRE2431</td>
+                                            <td>
+                                                <h2>
+                                                    <a>Civil Engg</a>
+                                                </h2>
+                                            </td>
+                                            <td>Minnie</td>
+                                            <td>2000</td>
+                                            <td>195</td>
+                                            <td class="text-end">
+                                                <div class="actions">
+                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="edit-department" class="btn btn-sm bg-danger-light">
+                                                        <i class="feather-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </td>
+                                            <td>PRE1534</td>
+                                            <td>
+                                                <h2>
+                                                    <a>MCA</a>
+                                                </h2>
+                                            </td>
+                                            <td>Lois A</td>
+                                            <td>1992</td>
+                                            <td>200</td>
+                                            <td class="text-end">
+                                                <div class="actions">
+                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="edit-department" class="btn btn-sm bg-danger-light">
+                                                        <i class="feather-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check check-tables">
+                                                    <input class="form-check-input" type="checkbox" value="something">
+                                                </div>
+                                            </td>
+                                            <td>PRE2153</td>
+                                            <td>
+                                                <h2>
+                                                    <a>BCA</a>
+                                                </h2>
+                                            </td>
+                                            <td>Calvin</td>
+                                            <td>1992</td>
+                                            <td>152</td>
+                                            <td class="text-end">
+                                                <div class="actions">
+                                                    <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+                                                        <i class="feather-eye"></i>
+                                                    </a>
+                                                    <a href="edit-department" class="btn btn-sm bg-danger-light">
+                                                        <i class="feather-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <footer>
+                <p>Copyright © 2022 Dreamguys.</p>
+            </footer>
+
         </div>
 
     </div>
@@ -575,10 +665,7 @@
 
     <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <script src="assets/plugins/moment/moment.min.js"></script>
-    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
+    <script src="assets/plugins/datatables/datatables.min.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>

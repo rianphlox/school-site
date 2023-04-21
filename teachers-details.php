@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Preskool - Teacher Details</title>
+<?php include './inc/head.php' ?>
 
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="assets/plugins/feather/feather.css">
-
-    <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
-
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
-
-    <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
 
 <body>
 
@@ -31,10 +9,10 @@
         <div class="header">
 
             <div class="header-left">
-                <a href="index.php" class="logo">
+                <a href="index" class="logo">
                     <img src="assets/img/logo.png" alt="Logo">
                 </a>
-                <a href="index.php" class="logo logo-small">
+                <a href="index" class="logo logo-small">
                     <img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
                 </a>
             </div>
@@ -167,9 +145,9 @@
                                 <p class="text-muted mb-0">Administrator</p>
                             </div>
                         </div>
-                        <a class="dropdown-item" href="profile.php">My Profile</a>
-                        <a class="dropdown-item" href="inbox.php">Inbox</a>
-                        <a class="dropdown-item" href="login.php">Logout</a>
+                        <a class="dropdown-item" href="profile">My Profile</a>
+                        <a class="dropdown-item" href="inbox">Inbox</a>
+                        <a class="dropdown-item" href="login">Logout</a>
                     </div>
                 </li>
 
@@ -188,54 +166,54 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="index.php">Admin Dashboard</a></li>
-                                <li><a href="teacher-dashboard.php">Teacher Dashboard</a></li>
-                                <li><a href="student-dashboard.php">Student Dashboard</a></li>
+                                <li><a href="index">Admin Dashboard</a></li>
+                                <li><a href="teacher-dashboard">Teacher Dashboard</a></li>
+                                <li><a href="student-dashboard">Student Dashboard</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="students.php">Student List</a></li>
-                                <li><a href="student-details.php">Student View</a></li>
-                                <li><a href="add-student.php">Student Add</a></li>
-                                <li><a href="edit-student.php">Student Edit</a></li>
+                                <li><a href="students">Student List</a></li>
+                                <li><a href="student-details">Student View</a></li>
+                                <li><a href="add-student">Student Add</a></li>
+                                <li><a href="edit-student">Student Edit</a></li>
                             </ul>
                         </li>
                         <li class="submenu active">
                             <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="teachers.php">Teacher List</a></li>
-                                <li><a href="teacher-details.php" class="active">Teacher View</a></li>
-                                <li><a href="add-teacher.php">Teacher Add</a></li>
-                                <li><a href="edit-teacher.php">Teacher Edit</a></li>
+                                <li><a href="teachers">Teacher List</a></li>
+                                <li><a href="teacher-details" class="active">Teacher View</a></li>
+                                <li><a href="add-teacher">Teacher Add</a></li>
+                                <li><a href="edit-teacher">Teacher Edit</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="departments.php">Department List</a></li>
-                                <li><a href="add-department.php">Department Add</a></li>
-                                <li><a href="edit-department.php">Department Edit</a></li>
+                                <li><a href="departments">Department List</a></li>
+                                <li><a href="add-department">Department Add</a></li>
+                                <li><a href="edit-department">Department Edit</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-book-reader"></i> <span> Subjects</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="subjects.php">Subject List</a></li>
-                                <li><a href="add-subject.php">Subject Add</a></li>
-                                <li><a href="edit-subject.php">Subject Edit</a></li>
+                                <li><a href="subjects">Subject List</a></li>
+                                <li><a href="add-subject">Subject Add</a></li>
+                                <li><a href="edit-subject">Subject Edit</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-clipboard"></i> <span> Invoices</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="invoices.php">Invoices List</a></li>
-                                <li><a href="invoice-grid.php">Invoices Grid</a></li>
-                                <li><a href="add-invoice.php">Add Invoices</a></li>
-                                <li><a href="edit-invoice.php">Edit Invoices</a></li>
-                                <li><a href="view-invoice.php">Invoices Details</a></li>
-                                <li><a href="invoices-settings.php">Invoices Settings</a></li>
+                                <li><a href="invoices">Invoices List</a></li>
+                                <li><a href="invoice-grid">Invoices Grid</a></li>
+                                <li><a href="add-invoice">Add Invoices</a></li>
+                                <li><a href="edit-invoice">Edit Invoices</a></li>
+                                <li><a href="view-invoice">Invoices Details</a></li>
+                                <li><a href="invoices-settings">Invoices Settings</a></li>
                             </ul>
                         </li>
                         <li class="menu-title">
@@ -244,44 +222,44 @@
                         <li class="submenu">
                             <a href="#"><i class="fas fa-file-invoice-dollar"></i> <span> Accounts</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="fees-collections.php">Fees Collection</a></li>
-                                <li><a href="expenses.php">Expenses</a></li>
-                                <li><a href="salary.php">Salary</a></li>
-                                <li><a href="add-fees-collection.php">Add Fees</a></li>
-                                <li><a href="add-expenses.php">Add Expenses</a></li>
-                                <li><a href="add-salary.php">Add Salary</a></li>
+                                <li><a href="fees-collections">Fees Collection</a></li>
+                                <li><a href="expenses">Expenses</a></li>
+                                <li><a href="salary">Salary</a></li>
+                                <li><a href="add-fees-collection">Add Fees</a></li>
+                                <li><a href="add-expenses">Add Expenses</a></li>
+                                <li><a href="add-salary">Add Salary</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="holiday.php"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
+                            <a href="holiday"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
                         </li>
                         <li>
-                            <a href="fees.php"><i class="fas fa-comment-dollar"></i> <span>Fees</span></a>
+                            <a href="fees"><i class="fas fa-comment-dollar"></i> <span>Fees</span></a>
                         </li>
                         <li>
-                            <a href="exam.php"><i class="fas fa-clipboard-list"></i> <span>Exam list</span></a>
+                            <a href="exam"><i class="fas fa-clipboard-list"></i> <span>Exam list</span></a>
                         </li>
                         <li>
-                            <a href="event.php"><i class="fas fa-calendar-day"></i> <span>Events</span></a>
+                            <a href="event"><i class="fas fa-calendar-day"></i> <span>Events</span></a>
                         </li>
                         <li>
-                            <a href="time-table.php"><i class="fas fa-table"></i> <span>Time Table</span></a>
+                            <a href="time-table"><i class="fas fa-table"></i> <span>Time Table</span></a>
                         </li>
                         <li>
-                            <a href="library.php"><i class="fas fa-book"></i> <span>Library</span></a>
+                            <a href="library"><i class="fas fa-book"></i> <span>Library</span></a>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fa fa-newspaper"></i> <span> Blogs</span>
                                 <span class="menu-arrow"></span>
                             </a>
                             <ul>
-                                <li><a href="blog.php">All Blogs</a></li>
-                                <li><a href="add-blog.php">Add Blog</a></li>
-                                <li><a href="edit-blog.php">Edit Blog</a></li>
+                                <li><a href="blog">All Blogs</a></li>
+                                <li><a href="add-blog">Add Blog</a></li>
+                                <li><a href="edit-blog">Edit Blog</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="settings.php"><i class="fas fa-cog"></i> <span>Settings</span></a>
+                            <a href="settings"><i class="fas fa-cog"></i> <span>Settings</span></a>
                         </li>
                         <li class="menu-title">
                             <span>Pages</span>
@@ -289,26 +267,26 @@
                         <li class="submenu">
                             <a href="#"><i class="fas fa-shield-alt"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="login.php">Login</a></li>
-                                <li><a href="register.php">Register</a></li>
-                                <li><a href="forgot-password.php">Forgot Password</a></li>
-                                <li><a href="error-404.php">Error Page</a></li>
+                                <li><a href="login">Login</a></li>
+                                <li><a href="register">Register</a></li>
+                                <li><a href="forgot-password">Forgot Password</a></li>
+                                <li><a href="error-404">Error Page</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="blank-page.php"><i class="fas fa-file"></i> <span>Blank Page</span></a>
+                            <a href="blank-page"><i class="fas fa-file"></i> <span>Blank Page</span></a>
                         </li>
                         <li class="menu-title">
                             <span>Others</span>
                         </li>
                         <li>
-                            <a href="sports.php"><i class="fas fa-baseball-ball"></i> <span>Sports</span></a>
+                            <a href="sports"><i class="fas fa-baseball-ball"></i> <span>Sports</span></a>
                         </li>
                         <li>
-                            <a href="hostel.php"><i class="fas fa-hotel"></i> <span>Hostel</span></a>
+                            <a href="hostel"><i class="fas fa-hotel"></i> <span>Hostel</span></a>
                         </li>
                         <li>
-                            <a href="transport.php"><i class="fas fa-bus"></i> <span>Transport</span></a>
+                            <a href="transport"><i class="fas fa-bus"></i> <span>Transport</span></a>
                         </li>
                         <li class="menu-title">
                             <span>UI Interface</span>
@@ -316,95 +294,95 @@
                         <li class="submenu">
                             <a href="#"><i class="fab fa-get-pocket"></i> <span>Base UI </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="alerts.php">Alerts</a></li>
-                                <li><a href="accordions.php">Accordions</a></li>
-                                <li><a href="avatar.php">Avatar</a></li>
-                                <li><a href="badges.php">Badges</a></li>
-                                <li><a href="buttons.php">Buttons</a></li>
-                                <li><a href="buttongroup.php">Button Group</a></li>
-                                <li><a href="breadcrumbs.php">Breadcrumb</a></li>
-                                <li><a href="cards.php">Cards</a></li>
-                                <li><a href="carousel.php">Carousel</a></li>
-                                <li><a href="dropdowns.php">Dropdowns</a></li>
-                                <li><a href="grid.php">Grid</a></li>
-                                <li><a href="images.php">Images</a></li>
-                                <li><a href="lightbox.php">Lightbox</a></li>
-                                <li><a href="media.php">Media</a></li>
-                                <li><a href="modal.php">Modals</a></li>
-                                <li><a href="offcanvas.php">Offcanvas</a></li>
-                                <li><a href="pagination.php">Pagination</a></li>
-                                <li><a href="popover.php">Popover</a></li>
-                                <li><a href="progress.php">Progress Bars</a></li>
-                                <li><a href="placeholders.php">Placeholders</a></li>
-                                <li><a href="rangeslider.php">Range Slider</a></li>
-                                <li><a href="spinners.php">Spinner</a></li>
-                                <li><a href="sweetalerts.php">Sweet Alerts</a></li>
-                                <li><a href="tab.php">Tabs</a></li>
-                                <li><a href="toastr.php">Toasts</a></li>
-                                <li><a href="tooltip.php">Tooltip</a></li>
-                                <li><a href="typography.php">Typography</a></li>
-                                <li><a href="video.php">Video</a></li>
+                                <li><a href="alerts">Alerts</a></li>
+                                <li><a href="accordions">Accordions</a></li>
+                                <li><a href="avatar">Avatar</a></li>
+                                <li><a href="badges">Badges</a></li>
+                                <li><a href="buttons">Buttons</a></li>
+                                <li><a href="buttongroup">Button Group</a></li>
+                                <li><a href="breadcrumbs">Breadcrumb</a></li>
+                                <li><a href="cards">Cards</a></li>
+                                <li><a href="carousel">Carousel</a></li>
+                                <li><a href="dropdowns">Dropdowns</a></li>
+                                <li><a href="grid">Grid</a></li>
+                                <li><a href="images">Images</a></li>
+                                <li><a href="lightbox">Lightbox</a></li>
+                                <li><a href="media">Media</a></li>
+                                <li><a href="modal">Modals</a></li>
+                                <li><a href="offcanvas">Offcanvas</a></li>
+                                <li><a href="pagination">Pagination</a></li>
+                                <li><a href="popover">Popover</a></li>
+                                <li><a href="progress">Progress Bars</a></li>
+                                <li><a href="placeholders">Placeholders</a></li>
+                                <li><a href="rangeslider">Range Slider</a></li>
+                                <li><a href="spinners">Spinner</a></li>
+                                <li><a href="sweetalerts">Sweet Alerts</a></li>
+                                <li><a href="tab">Tabs</a></li>
+                                <li><a href="toastr">Toasts</a></li>
+                                <li><a href="tooltip">Tooltip</a></li>
+                                <li><a href="typography">Typography</a></li>
+                                <li><a href="video">Video</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i data-feather="box"></i> <span>Elements </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="ribbon.php">Ribbon</a></li>
-                                <li><a href="clipboard.php">Clipboard</a></li>
-                                <li><a href="drag-drop.php">Drag & Drop</a></li>
-                                <li><a href="rating.php">Rating</a></li>
-                                <li><a href="text-editor.php">Text Editor</a></li>
-                                <li><a href="counter.php">Counter</a></li>
-                                <li><a href="scrollbar.php">Scrollbar</a></li>
-                                <li><a href="notification.php">Notification</a></li>
-                                <li><a href="stickynote.php">Sticky Note</a></li>
-                                <li><a href="timeline.php">Timeline</a></li>
-                                <li><a href="horizontal-timeline.php">Horizontal Timeline</a></li>
-                                <li><a href="form-wizard.php">Form Wizard</a></li>
+                                <li><a href="ribbon">Ribbon</a></li>
+                                <li><a href="clipboard">Clipboard</a></li>
+                                <li><a href="drag-drop">Drag & Drop</a></li>
+                                <li><a href="rating">Rating</a></li>
+                                <li><a href="text-editor">Text Editor</a></li>
+                                <li><a href="counter">Counter</a></li>
+                                <li><a href="scrollbar">Scrollbar</a></li>
+                                <li><a href="notification">Notification</a></li>
+                                <li><a href="stickynote">Sticky Note</a></li>
+                                <li><a href="timeline">Timeline</a></li>
+                                <li><a href="horizontal-timeline">Horizontal Timeline</a></li>
+                                <li><a href="form-wizard">Form Wizard</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i data-feather="bar-chart-2"></i> <span> Charts </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="chart-apex.php">Apex Charts</a></li>
-                                <li><a href="chart-js.php">Chart Js</a></li>
-                                <li><a href="chart-morris.php">Morris Charts</a></li>
-                                <li><a href="chart-flot.php">Flot Charts</a></li>
-                                <li><a href="chart-peity.php">Peity Charts</a></li>
-                                <li><a href="chart-c3.php">C3 Charts</a></li>
+                                <li><a href="chart-apex">Apex Charts</a></li>
+                                <li><a href="chart-js">Chart Js</a></li>
+                                <li><a href="chart-morris">Morris Charts</a></li>
+                                <li><a href="chart-flot">Flot Charts</a></li>
+                                <li><a href="chart-peity">Peity Charts</a></li>
+                                <li><a href="chart-c3">C3 Charts</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i data-feather="award"></i> <span> Icons </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="icon-fontawesome.php">Fontawesome Icons</a></li>
-                                <li><a href="icon-feather.php">Feather Icons</a></li>
-                                <li><a href="icon-ionic.php">Ionic Icons</a></li>
-                                <li><a href="icon-material.php">Material Icons</a></li>
-                                <li><a href="icon-pe7.php">Pe7 Icons</a></li>
-                                <li><a href="icon-simpleline.php">Simpleline Icons</a></li>
-                                <li><a href="icon-themify.php">Themify Icons</a></li>
-                                <li><a href="icon-weather.php">Weather Icons</a></li>
-                                <li><a href="icon-typicon.php">Typicon Icons</a></li>
-                                <li><a href="icon-flag.php">Flag Icons</a></li>
+                                <li><a href="icon-fontawesome">Fontawesome Icons</a></li>
+                                <li><a href="icon-feather">Feather Icons</a></li>
+                                <li><a href="icon-ionic">Ionic Icons</a></li>
+                                <li><a href="icon-material">Material Icons</a></li>
+                                <li><a href="icon-pe7">Pe7 Icons</a></li>
+                                <li><a href="icon-simpleline">Simpleline Icons</a></li>
+                                <li><a href="icon-themify">Themify Icons</a></li>
+                                <li><a href="icon-weather">Weather Icons</a></li>
+                                <li><a href="icon-typicon">Typicon Icons</a></li>
+                                <li><a href="icon-flag">Flag Icons</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-columns"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="form-basic-inputs.php">Basic Inputs </a></li>
-                                <li><a href="form-input-groups.php">Input Groups </a></li>
-                                <li><a href="form-horizontal.php">Horizontal Form </a></li>
-                                <li><a href="form-vertical.php"> Vertical Form </a></li>
-                                <li><a href="form-mask.php"> Form Mask </a></li>
-                                <li><a href="form-validation.php"> Form Validation </a></li>
+                                <li><a href="form-basic-inputs">Basic Inputs </a></li>
+                                <li><a href="form-input-groups">Input Groups </a></li>
+                                <li><a href="form-horizontal">Horizontal Form </a></li>
+                                <li><a href="form-vertical"> Vertical Form </a></li>
+                                <li><a href="form-mask"> Form Mask </a></li>
+                                <li><a href="form-validation"> Form Validation </a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="fas fa-table"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="tables-basic.php">Basic Tables </a></li>
-                                <li><a href="data-tables.php">Data Table </a></li>
+                                <li><a href="tables-basic">Basic Tables </a></li>
+                                <li><a href="data-tables">Data Table </a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -443,7 +421,7 @@
                             <div class="page-sub-header">
                                 <h3 class="page-title">Teachers Details</h3>
                                 <ul class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="teachers.php">Teachers</a></li>
+                                    <li class="breadcrumb-item"><a href="teachers">Teachers</a></li>
                                     <li class="breadcrumb-item active">Teachers Details</li>
                                 </ul>
                             </div>

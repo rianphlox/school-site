@@ -1,7 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Preskool - Department</title>
 
-<?php include './inc/head.php' ?>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/feather/feather.css">
+
+    <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
 <body>
 
@@ -181,21 +202,21 @@
                                 <li><a href="edit-student">Student Edit</a></li>
                             </ul>
                         </li>
-                        <li class="submenu active">
+                        <li class="submenu">
                             <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="teachers">Teacher List</a></li>
                                 <li><a href="teacher-details">Teacher View</a></li>
                                 <li><a href="add-teacher">Teacher Add</a></li>
-                                <li><a href="edit-teacher" class="active">Teacher Edit</a></li>
+                                <li><a href="edit-teacher">Teacher Edit</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <li class="submenu active">
                             <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="departments">Department List</a></li>
                                 <li><a href="add-department">Department Add</a></li>
-                                <li><a href="edit-department">Department Edit</a></li>
+                                <li><a href="edit-department" class="active">Department Edit</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -420,10 +441,10 @@
                 <div class="page-header">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3 class="page-title">Edit Teachers</h3>
+                            <h3 class="page-title">Edit Department</h3>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="teachers">Teachers</a></li>
-                                <li class="breadcrumb-item active">Edit Teachers</li>
+                                <li class="breadcrumb-item"><a href="departments">Department</a></li>
+                                <li class="breadcrumb-item active">Edit Department</li>
                             </ul>
                         </div>
                     </div>
@@ -436,118 +457,36 @@
                                 <form>
                                     <div class="row">
                                         <div class="col-12">
-                                            <h5 class="form-title"><span>Basic Details</span></h5>
+                                            <h5 class="form-title"><span>Department Details</span></h5>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Teacher ID <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="PRE1234">
+                                                <label>Department ID <span class="login-danger">*</span></label>
+                                                <input type="text" class="form-control" value="PRE1534">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Name <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Vincent">
+                                                <label>Department Name <span class="login-danger">*</span></label>
+                                                <input type="text" class="form-control" value="MCA">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Gender <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                    <option>Others</option>
-                                                </select>
+                                                <label>Head of Department <span class="login-danger">*</span></label>
+                                                <input type="text" class="form-control" value="Lois A">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
-                                                <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                <input class="form-control datetimepicker" type="text" placeholder="29-04-2022">
+                                                <label>Department Start Date <span class="login-danger">*</span></label>
+                                                <input class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Mobile <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="077 3499 9959">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms calendar-icon">
-                                                <label>Joining Date <span class="login-danger">*</span></label>
-                                                <input class="form-control datetimepicker" type="text" placeholder="29-04-2022">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Qualification <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" value="Bachelor of Engineering">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Experience <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" value="5">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Login Details</span></h5>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Username <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Email ID <span class="login-danger">*</span></label>
-                                                <input type="email" class="form-control" value="vincent20@gmail.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Password <span class="login-danger">*</span></label>
-                                                <input type="password" class="form-control" value="vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Repeat Password <span class="login-danger">*</span></label>
-                                                <input type="password" class="form-control" value="vincent">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <h5 class="form-title"><span>Address</span></h5>
-                                        </div>
-                                        <div class="col-12 ">
-                                            <div class="form-group local-forms">
-                                                <label>Address <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="3979 Ashwood Drive">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>City <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Omaha">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>State <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="Omaha">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Zip Code <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="3979">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Country <span class="login-danger">*</span></label>
-                                                <input type="text" class="form-control" value="USA">
+                                                <label>No of Students <span class="login-danger">*</span></label>
+                                                <input type="text" class="form-control" value="200">
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -577,8 +516,6 @@
 
     <script src="assets/plugins/moment/moment.min.js"></script>
     <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
-
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
