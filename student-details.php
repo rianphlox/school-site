@@ -1,3 +1,9 @@
+<?php
+    if (parse_url($_SERVER['REQUEST_URI'],  PHP_URL_QUERY)) {
+        $who = $_GET['h'];
+        
+    }
+?>
 
 <?php include './inc/head.php' ?>
 
@@ -162,14 +168,16 @@
                         <li class="menu-title">
                             <span>Main Menu</span>
                         </li>
-                        <li class="submenu">
-                            <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
-                            <ul>
-                                <li><a href="index">Admin Dashboard</a></li>
-                                <li><a href="teacher-dashboard">Teacher Dashboard</a></li>
-                                <li><a href="student-dashboard">Student Dashboard</a></li>
-                            </ul>
-                        </li>
+                        <?php if(!$who): ?>
+                            <li class="submenu">
+                                <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                                <ul>
+                                    <li><a href="index">Admin Dashboard</a></li>
+                                    <li><a href="teacher-dashboard">Teacher Dashboard</a></li>
+                                    <li><a href="student-dashboard">Student Dashboard</a></li>
+                                </ul>
+                            </li>
+                        <?php endif; ?>
                         <li class="submenu active">
                             <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                             <ul>
@@ -287,6 +295,7 @@
                         <li>
                             <a href="transport"><i class="fas fa-bus"></i> <span>Transport</span></a>
                         </li>
+                        
                         <li class="menu-title">
                             <span>UI Interface</span>
                         </li>

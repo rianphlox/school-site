@@ -1,5 +1,13 @@
-<?php include './inc/head.php' ?>
+<?php
+    if (isset($_POST['submit'])) {
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+    }
 
+?>
+
+<?php include 'head.php' ?>
 
 <body>
 
@@ -8,7 +16,7 @@
             <div class="container">
                 <div class="loginbox">
                     <div class="login-left">
-                        <img class="img-fluid" src="assets/img/login.png" alt="Logo">
+                        <img class="img-fluid" src="/school/assets/img/login.png" alt="Logo">
                     </div>
                     <div class="login-right">
                         <div class="login-right-wrap">
@@ -61,13 +69,13 @@
     </div>
 
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/school/assets/js/jquery-3.6.0.min.js"></script>
 
-    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/school/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="assets/js/feather.min.js"></script>
+    <script src="/school/assets/js/feather.min.js"></script>
 
-    <script src="assets/js/script.js"></script>
+    <script src="/school/assets/js/script.js"></script>
 </body>
 
 </html>
