@@ -186,7 +186,8 @@
                                 <li><a href="teachers" class="active">Teacher List</a></li>
                                 <li><a href="teacher-details">Teacher View</a></li>
                                 <li><a href="add-teacher">Teacher Add</a></li>
-                                <li><a href="edit-teacher">Teacher Edit</a></li>
+                                <li><a href="edit-teacher">Edit Teacher Profile</a></li>
+                                <li><a href="add-student">Add Student</a></li>
                             </ul>
                         </li>
                         <li class="submenu">

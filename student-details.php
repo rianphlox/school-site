@@ -181,9 +181,9 @@
                         <li class="submenu active">
                             <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="students">Student List</a></li>
+                                <!-- <li><a href="students">Student List</a></li> -->
                                 <li><a href="student-details" class="active">Student View</a></li>
-                                <li><a href="add-student">Student Add</a></li>
+                                <!-- <li><a href="add-student">Student Add</a></li> -->
                                 <li><a href="edit-student">Student Edit</a></li>
                             </ul>
                         </li>

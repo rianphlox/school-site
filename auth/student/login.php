@@ -20,7 +20,7 @@
             // check if user and password is correct
             if ($username == $userID && $password == $pass) {
                 // echo "User exists";
-                header('location: /school/student-details?h=s');
+                header("location: /school/student-details?from=login&id=$id");
             }
         }
     }

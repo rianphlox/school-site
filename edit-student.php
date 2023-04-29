@@ -1,5 +1,3 @@
-
-
 <?php include './inc/head.php' ?>
 
 <body>
@@ -174,9 +172,9 @@
                         <li class="submenu active">
                             <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="students">Student List</a></li>
+                                <!-- <li><a href="students">Student List</a></li> -->
                                 <li><a href="student-details">Student View</a></li>
-                                <li><a href="add-student">Student Add</a></li>
+                                <!-- <li><a href="add-student">Student Add</a></li> -->
                                 <li><a href="edit-student" class="active">Student Edit</a></li>
                             </ul>
                         </li>
@@ -189,7 +187,7 @@
                                 <li><a href="edit-teacher">Teacher Edit</a></li>
                             </ul>
                         </li>
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#"><i class="fas fa-building"></i> <span> Departments</span> <span class="menu-arrow"></span></a>
                             <ul>
                                 <li><a href="departments">Department List</a></li>
@@ -215,7 +213,7 @@
                                 <li><a href="view-invoice">Invoices Details</a></li>
                                 <li><a href="invoices-settings">Invoices Settings</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="menu-title">
                             <span>Management</span>
                         </li>
@@ -230,9 +228,9 @@
                                 <li><a href="add-salary">Add Salary</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="holiday"><i class="fas fa-holly-berry"></i> <span>Holiday</span></a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="fees"><i class="fas fa-comment-dollar"></i> <span>Fees</span></a>
                         </li>
@@ -248,7 +246,7 @@
                         <li>
                             <a href="library"><i class="fas fa-book"></i> <span>Library</span></a>
                         </li>
-                        <li class="submenu">
+                        <!-- <li class="submenu">
                             <a href="#"><i class="fa fa-newspaper"></i> <span> Blogs</span>
                                 <span class="menu-arrow"></span>
                             </a>
@@ -257,7 +255,7 @@
                                 <li><a href="add-blog">Add Blog</a></li>
                                 <li><a href="edit-blog">Edit Blog</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="settings"><i class="fas fa-cog"></i> <span>Settings</span></a>
                         </li>

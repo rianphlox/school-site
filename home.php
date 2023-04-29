@@ -70,7 +70,7 @@
                     <li class="nav-item active"><a href="index" class="nav-link pl-0">Home</a></li>
                     <li class="nav-item"><a href="about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="courses" class="nav-link">Courses</a></li>
-                    <li class="nav-item"><a href="teacher" class="nav-link">Staff</a></li>
+                    <li class="nav-item"><a href="staff" class="nav-link">Staff</a></li>
                     <li class="nav-item"><a href="blog" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
                 </ul>

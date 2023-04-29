@@ -1,3 +1,14 @@
+<?php
+    require_once 'config/DB.php';
+    $db = new DB();
+
+    if (isset($_POST['submit'])) {
+        // echo "<pre>";
+        // print_r($_POST)   ;
+        // echo "</pre>";
+    }
+
+?>
 
 <?php include './inc/head.php' ?>
 
@@ -173,7 +184,7 @@
                         <li class="submenu active">
                             <a href="#"><i class="fas fa-graduation-cap"></i> <span> Students</span> <span class="menu-arrow"></span></a>
                             <ul>
-                                <li><a href="students">Student List</a></li>
+                                <!-- <li><a href="students">Student List</a></li> -->
                                 <li><a href="student-details">Student View</a></li>
                                 <li><a href="add-student" class="active">Student Add</a></li>
                                 <li><a href="edit-student">Student Edit</a></li>
@@ -446,27 +457,27 @@
                     <div class="col-sm-12">
                         <div class="card comman-shadow">
                             <div class="card-body">
-                                <form>
+                                <form method="post" action="<?= htmlentities((basename($_SERVER['PHP_SELF'], '.php') )) ?>">
                                     <div class="row">
                                         <div class="col-12">
-                                            <h5 class="form-title student-info">Student Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
+                                            <h5 class="form-title student-info">Enter Student Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>First Name <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" placeholder="Enter First Name">
+                                                <input class="form-control" name="first_name" type="text" placeholder="Enter First Name">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Last Name <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" placeholder="Enter First Name">
+                                                <input name="last_name" class="form-control" type="text" placeholder="Enter First Name">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Gender <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
+                                                <select name="gender" class="form-control select">
                                                     <option>Select Gender</option>
                                                     <option>Female</option>
                                                     <option>Male</option>
@@ -477,48 +488,43 @@
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms calendar-icon">
                                                 <label>Date Of Birth <span class="login-danger">*</span></label>
-                                                <input class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
+                                                <input name="dob" class="form-control datetimepicker" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Roll </label>
-                                                <input class="form-control" type="text" placeholder="Enter Roll Number">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4">
-                                            <div class="form-group local-forms">
-                                                <label>Blood Group <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
-                                                    <option>Please Select Group </option>
-                                                    <option>B+</option>
-                                                    <option>A+</option>
-                                                    <option>O+</option>
-                                                </select>
+                                                <label>Date of Registration </label>
+                                                <input name="date_of_reg" class="form-control" type="text" placeholder="DD-MM-YYYY">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>Religion <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
+                                                <select name="religion" class="form-control select">
                                                     <option>Please Select Religion </option>
-                                                    <option>Hindu</option>
                                                     <option>Christian</option>
-                                                    <option>Others</option>
+                                                    <option>Islam</option>
+                                                    <!-- <option>Others</option> -->
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
                                                 <label>E-Mail <span class="login-danger">*</span></label>
-                                                <input class="form-control" type="text" placeholder="Enter Email Address">
+                                                <input name="email" class="form-control" type="text" placeholder="Enter Email Address">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
+                                                <label>Phone </label>
+                                                <input name="phone_number" class="form-control" type="text" placeholder="Enter Phone Number">
+                                            </div>
+                                        </div>                                        
+                                        <div class="col-12 col-sm-4">
+                                            <div class="form-group local-forms">
                                                 <label>Class <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
-                                                    <option>Please Select Class </option>
+                                                <select name="class" class="form-control select">
+                                                    <option disabled selected>Please Select Class </option>
                                                     <option>12</option>
                                                     <option>11</option>
                                                     <option>10</option>
@@ -527,28 +533,24 @@
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Section <span class="login-danger">*</span></label>
-                                                <select class="form-control select">
-                                                    <option>Please Select Section </option>
-                                                    <option>B</option>
-                                                    <option>A</option>
-                                                    <option>C</option>
-                                                </select>
+                                                <label>Guardian Name <span class="login-danger">*</span></label>
+                                                <input name="guardian_name" type="text" class="form-control" name="guardian_name" id="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Admission ID </label>
-                                                <input class="form-control" type="text" placeholder="Enter Admission ID">
+                                                <label>Guardian Phone Number <span class="login-danger">*</span></label>
+                                                <input name="guardian_phone_number" class="form-control" type="text" name="guardian_phone" id="">
                                             </div>
                                         </div>
                                         <div class="col-12 col-sm-4">
                                             <div class="form-group local-forms">
-                                                <label>Phone </label>
-                                                <input class="form-control" type="text" placeholder="Enter Phone Number">
+                                                <label>Guardian Address </label>
+                                                <input class="form-control" name="guardian_address" type="text" placeholder="Enter Guardian Address">
                                             </div>
                                         </div>
-                                        <div class="col-12 col-sm-4">
+                                        
+                                        <!-- <div class="col-12 col-sm-4">
                                             <div class="form-group students-up-files">
                                                 <label>Upload Student Photo (150px X 150px)</label>
                                                 <div class="uplod">
@@ -557,10 +559,10 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="col-12">
                                             <div class="student-submit">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
                                             </div>
                                         </div>
                                     </div>
