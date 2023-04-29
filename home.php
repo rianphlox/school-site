@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Fox University - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Fox University</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row no-gutters d-flex align-items-center align-items-stretch">
                 <div class="col-md-4 d-flex align-items-center py-4">
-                    <a class="navbar-brand" href="index.html">Fox. <span>University</span></a>
+                    <a class="navbar-brand" href="home">Fox. <span>University</span></a>
                 </div>
                 <div class="col-lg-8 d-block">
                     <div class="row d-flex">
@@ -32,7 +32,7 @@
                             <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
                             <div class="text">
                                 <span>Email</span>
-                                <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e990869c9b8c84888085a98c84888085c78a8684">[email&#160;protected]</a></span>
+                                <span><a href="#" class="__cf_email__" data-cfemail="e990869c9b8c84888085a98c84888085c78a8684">[email&#160;protected]</a></span>
                             </div>
                         </div>
                         <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
@@ -67,12 +67,12 @@
             </form>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
-                    <li class="nav-item"><a href="teacher.html" class="nav-link">Staff</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item active"><a href="index" class="nav-link pl-0">Home</a></li>
+                    <li class="nav-item"><a href="about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="teacher" class="nav-link">Staff</a></li>
+                    <li class="nav-item"><a href="blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -158,7 +158,7 @@
         <div class="container">
             <div class="row d-flex">
                 <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-                    <div class="img" style="background-image: url(images/about.jpg); border"></div>
+                    <div class="img" style="background-image: url(images/about.jpg); "></div>
                 </div>
                 <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
                     <h2 class="mb-4">What We Offer</h2>
@@ -505,7 +505,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
+                        <a href="blog-single" class="block-20 d-flex align-items-end" style="background-image: url('images/image_1.jpg');">
                             <div class="meta-date text-center p-2">
                                 <span class="day">26</span>
                                 <span class="mos">June</span>
@@ -527,7 +527,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
+                        <a href="blog-single" class="block-20 d-flex align-items-end" style="background-image: url('images/image_2.jpg');">
                             <div class="meta-date text-center p-2">
                                 <span class="day">26</span>
                                 <span class="mos">June</span>
@@ -549,7 +549,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
+                        <a href="blog-single" class="block-20 d-flex align-items-end" style="background-image: url('images/image_3.jpg');">
                             <div class="meta-date text-center p-2">
                                 <span class="day">26</span>
                                 <span class="mos">June</span>
