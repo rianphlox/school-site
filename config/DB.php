@@ -17,4 +17,12 @@ class DB {
         $this->conn = new mysqli($this->host, $this->user, $this->password, $this->dbname) or die("Failed to connect to MySQLi" . $this->conn->connect_error) ;
     }
 
+    public function formatDate($date) {
+        $date = date_create($date);
+        return date_format($date, 'd-m-Y');
+    }
+
+    public function sanitize($field) {
+        return htmlentities(trim($field));
+    }
 }

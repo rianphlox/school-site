@@ -8,11 +8,11 @@
         $password = $_POST['password'];
 
         // check if username exists
-        $sql = "SELECT id, username, password FROM student_auth Where username = ?";
+        $sql = "SELECT id, name, username, password FROM student_auth Where username = ?";
         $stmt = $db->conn->prepare($sql);
         $stmt->bind_param('s', $username);
         $stmt->execute();
-        $stmt->bind_result($id, $userID, $pass);
+        $stmt->bind_result($id, $name, $userID, $pass);
         $stmt->fetch();
         if (!$id) {
             echo "No user found";
@@ -20,7 +20,12 @@
             // check if user and password is correct
             if ($username == $userID && $password == $pass) {
                 // echo "User exists";
-                header("location: /school/student-details?from=login&id=$id");
+                session_start();
+                $_SESSION['id'] = $id;
+                $_SESSION['username'] = $userID;
+                $_SESSION['name'] = $name ;
+                $_SESSION['status'] = 'student';
+                header("location: /school/student-details");
             }
         }
     }
